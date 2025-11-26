@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(6, 16, 34);
+}
+h1{
+    display: flex;
+    color: antiquewhite;
+    justify-self: center;
+    margin-top: 100px;
+
+}
+.hour{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 40px;
+    color: black;
+    background-image: url("imges/Abdo.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:5px blue solid;
+    box-shadow:  5px 5px 5px rgb(4, 91, 254);
+}
+.hour_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 80px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+}
+#start,#stop{
+    background-color: rgb(3, 5, 23);
+    color: antiquewhite;
+}
+#start:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+    box-shadow:  4px 4px 3px blue;
+    transform: scale(1.1);
+}
+#stop:hover{
+    background-color: rgb(255, 23, 2);
+    cursor: pointer;
+    box-shadow:  4px 4px 3px blue;
+    transform: scale(1.1);
+
+
+}
+.start,.stop{
+    display: flex;
+    width: 350px;
+    height: 80px;
+    background-color: rgb(3, 7, 12);
+    border-radius: 15px;
+    color: antiquewhite;
+    justify-content: space-between;
+    box-shadow: 3px 10px 5px blue;
+
+}
+.AbdElrarman{
+ margin-left: 50px;
+ font-size: 35px;
+margin-top: 18px;
+
+}
+.Sha3rawy{
+ margin-right: 50px;
+ font-size: 35px;
+margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+    
+.hour_container,.start,.stop,.AbdElrarman,.Sha3rawy,#start,#stop{
+    display: flex;
+}
+.hour{
+    padding-left: 10px;
+    padding-top: 15px;
+
+}
+.AbdElrarman,.Sha3rawy{
+    display: none;
+}
+.start,.stop{
+    height: auto;
+    width: auto;
+}
+}
